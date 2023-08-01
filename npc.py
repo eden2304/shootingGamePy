@@ -179,7 +179,7 @@ class DemonBallNPC(NPC):
         super().__init__(game, path, pos, scale, shift, animation_time)
         self.attack_dist = 1.0
         self.health = 150
-        self.attack_damage = 25
+        self.attack_damage = 20
         self.speed = 0.05
         self.accuracy = 0.35
 
