@@ -59,11 +59,11 @@ class Player:
             dx -= speed_cos
             dy -= speed_sin
         if keys[pg.K_a]:
-            dx += speed_cos
-            dy -= speed_sin
-        if keys[pg.K_d]:
             dx -= speed_cos
             dy += speed_sin
+        if keys[pg.K_d]:
+            dx += speed_cos
+            dy -= speed_sin
 
         self.check_wall_collision(dx, dy)
 
@@ -83,6 +83,7 @@ class Player:
         if not(self.check_wall(int(self.x), int(self.y + dy * scale))):
             self.y += dy
 
+    # 2D
     def draw(self):
         pg.draw.line(self.game.screen, 'yellow', (self.x * 100, self.y * 100),
                      (self.x * 100 + WIDTH * math.cos(self.angle),
