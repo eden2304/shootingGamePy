@@ -172,18 +172,6 @@ class SoldierNPC(NPC):
                  scale=0.6, shift=0.38, animation_time=180):
         super().__init__(game, path, pos, scale, shift, animation_time)
 
-
-class DemonBallNPC(NPC):
-    def __init__(self, game, path='resources/sprites/npc/demon_ball/0.png', pos=(10.5, 6.5),
-                 scale=0.7, shift=0.27, animation_time=250):
-        super().__init__(game, path, pos, scale, shift, animation_time)
-        self.attack_dist = 1.0
-        self.health = 150
-        self.attack_damage = 20
-        self.speed = 0.05
-        self.accuracy = 0.35
-
-
 class GiantNPC(NPC):
     def __init__(self, game, path='resources/sprites/npc/giant/0.png', pos=(11.5, 6.0),
                  scale=1.0, shift=0.04, animation_time=210):

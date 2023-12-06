@@ -5,7 +5,6 @@ from map import *
 from player import *
 from raycasting import *
 from object_renderer import *
-from sprite_object import *
 from object_handler import *
 from weapon import *
 from sound import *
